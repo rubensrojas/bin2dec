@@ -1,0 +1,29 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+}
+
+.calculator {
+  display: flex;
+  background-color: #e0f0f0;
+  width: 38%;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.input {
+  font-size: x-large;
+  font-weight: normal;
+  height: 2rem;
+  min-width: 20rem;
+  width: fit-content;
+  margin: 1rem;
+}
