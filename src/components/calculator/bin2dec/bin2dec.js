@@ -17,7 +17,7 @@ const Bin2Dec = () => {
     setDecimal(value)
   }
 
-  const maxLength = (e) => {
+  const checkInput = (e) => {
     const lastNumber = e.target.value[e.target.value.length-1]
     
     if(Number(lastNumber) === 0 || Number(lastNumber)  === 1){
@@ -30,26 +30,26 @@ const Bin2Dec = () => {
   }
   
   return (
-    <div>
-      <h1 style={{margin: '1rem'}}>Conversor de binário para decimal</h1>
+    <div style={{alignContent: 'center'}}>
+      <h1 className="titulo">Conversor de binário para decimal</h1>
       <div className='calculator'>
-        <div>
-          <h2 style={{margin: "1rem"}}>Digite o binário</h2>
+        <div className='input-container'>
+          <h2 className="titulo">Digite o binário</h2>
           <input className='input'
             size='1'
-            type='number'
+            type='text'
             placeholder='Digite 0 ou 1'
             value = {binary}
             onChange = {e => {
-              maxLength(e)
+              checkInput(e)
             }}
         />
         </div>
-        <div>
-          <h2 style={{margin: "1rem"}}>Decimal</h2>
+        <div className='input-container'>
+          <h2 className="titulo">Decimal</h2>
           <input className='input'
             size='1'
-            type='number'
+            type='text'
             placeholder='Decimal'
             value = {decimal}
             readOnly
