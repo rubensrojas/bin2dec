@@ -1,4 +1,5 @@
 {
+  "homepage": "http://rubensrojas.github.io/bin2dec",
   "name": "bin2dec",
   "version": "0.1.0",
   "private": true,
@@ -34,5 +35,7 @@
   },
   "devDependencies": {
     "gh-pages": "^3.0.0"
-  }
+  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
 }
